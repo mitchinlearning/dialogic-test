@@ -1,5 +1,5 @@
 # Exploration of the Dialogic Plugin
-To test its capabilities! useful reference for future projects.
+To test its capabilities! Useful reference for future projects.
 
 ### Successfully Implemented:
 - [x] Basic dialog functions
@@ -11,3 +11,4 @@ To test its capabilities! useful reference for future projects.
 - [ ] Character animations
 - [ ] Dialog history
 - [ ] Save system
+- [ ] Timed choices

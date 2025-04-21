@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyi3mj2xjyw3s"]
+
+[ext_resource type="Script" path="res://scripts/ui/pause_button.gd" id="1_b2td1"]
+[ext_resource type="Texture2D" uid="uid://k3u8s7xh05lq" path="res://icon.svg" id="1_pk8f1"]
+
+[node name="PauseButton" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_b2td1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("1_pk8f1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+process_mode = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.505882)
+
+[node name="Pause" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="TextureButton" parent="ColorRect/Pause"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_pk8f1")
+
+[connection signal="pressed" from="MarginContainer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="ColorRect/Pause/ResumeButton" to="." method="_on_resume_button_pressed"]

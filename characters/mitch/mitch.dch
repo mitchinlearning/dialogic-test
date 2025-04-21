@@ -1,0 +1,30 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0, 0.703125, 0.620728, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Default",
+"description": "Just a regular girl trying to live her life.",
+"display_name": "Mitch",
+"mirror": false,
+"nicknames": ["Mitchie"],
+"offset": Vector2(0, 0),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://characters/mitch/default.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+}
+},
+"scale": 1.0
+}

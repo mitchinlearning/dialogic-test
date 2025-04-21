@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 0.800781, 0.203125, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Default",
+"description": "Mitch's crush.",
+"display_name": "Michelle",
+"mirror": true,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://characters/michelle/default.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+}
+},
+"scale": 1.0
+}

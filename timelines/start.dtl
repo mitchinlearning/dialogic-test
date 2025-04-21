@@ -1,8 +1,17 @@
 hello! this is a test. i want to try it out.
 i hope this works man because if it doesn't, i'm probably gonna kill myself.
+label choice1
+set {State.dialog_label} = "choice1"
 - yes
+	set {State.dialog_label} = ""
 	wawawawa
 - no
+	set {State.dialog_label} = ""
 	nonononono
 well. cool!\
 what if i do multiline text?
+join mitch left [animation="Slide In Right"]
+mitch: Hewooo nice to meet you
+join michelle right [animation="Slide In Left"]
+michelle: heya mitch!
+leave --All--

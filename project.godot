@@ -17,10 +17,14 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+State="*res://globals/state.gd"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"michelle": "res://characters/michelle/michelle.dch",
+"mitch": "res://characters/mitch/mitch.dch"
+}
 directories/dtl_directory={
 "start": "res://timelines/start.dtl"
 }
@@ -45,8 +49,8 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://styles/DefaultStyle.tres"]
+layout/default_style="res://styles/DefaultStyle.tres"
 variables={}
 
 [editor_plugins]
